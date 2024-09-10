@@ -29,7 +29,7 @@ const Home = () => {
           className="mx-auto"
         >
           <TypeAnimation
-            sequence={["Software Engineer", 1000,"Front End Developer", 1000, "Web developer",1000]}
+            sequence={["Software Engineer", 1000,"Front End Developer", 1000, "Web Developer",1000,"Shopify Developer",1000]}
             speed={50}
             repeat={Infinity}
             className="font-bold text-gray-400 text-xl md:text-3xl italic mb-4"

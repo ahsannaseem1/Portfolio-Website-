@@ -33,20 +33,20 @@ const Navbar = () => {
   return (
     <div className="fixed top-0 left-0 w-full justify-between bg-opacity-70 backdrop-blur-lg z-50" id="navbar">
       <div className="flex text-white justify-between items-center px-12 h-16">
-        <a href="#" className="font-thin text-2xl">&lt;Ahsan /&gt;</a>
+        <a href="#" className="font-bold text-2xl">&lt;Ahsan /&gt;</a>
 
-        <ul className="hidden md:flex gap-12 z-10 cursor-pointer font-light text-lg">
-          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4">
+        <ul className="hidden md:flex gap-12 z-10 font-light text-lg">
+          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4 cursor-pointer">
             <Link to="skills" smooth={true} offset={50} duration={500}>
               About
             </Link>
           </li>
-          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4">
+          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4 cursor-pointer">
             <Link to="portfolio" smooth={true} offset={50} duration={500}>
               Portfolio
             </Link>
           </li>
-          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4">
+          <li className="h-full transition-transform transform hover:scale-110 w-full mx-4 cursor-pointer">
             <Link to="contact" smooth={true} offset={50} duration={500}>
               Contact
             </Link>
@@ -62,17 +62,17 @@ const Navbar = () => {
           className="fixed left-0 top-0 secondary-color z-40 w-1/2 h-screen"
         >
           <ul className="font-semibold text-4xl space-y-8 mt-24 text-center text-white">
-            <li>
+            <li className="cursor-pointer">
               <Link to="skills" onClick={closeNav} smooth={true} offset={50} duration={500}>
                 About
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="portfolio" onClick={closeNav} smooth={true} offset={50} duration={500}>
                 Portfolio
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="contact" onClick={closeNav} smooth={true} offset={50} duration={500}>
                 Contact
               </Link>
