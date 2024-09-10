@@ -20,7 +20,9 @@ body {
   overflow-x: hidden !important;
   max-width: 100%;
 }
-
+.secondary-color{
+  background-color: #A855F7;
+}
 span {
   @apply text-purple-600;
 }
