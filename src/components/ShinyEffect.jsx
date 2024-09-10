@@ -1,11 +1,11 @@
 import React from 'react'
 
-const ShinyEffect = ({left, right, top, size = 500}) => {
+const ShinyEffect = ({left, right, top, size}) => {
 
     const positionStyles = {
         top: `${top}px`,
-        width: `${size}px`,
-        height: `${size}px`,
+        width: `${size}%`,
+        height: `${size}%`,
         zIndex: -1
     }
 
@@ -17,7 +17,7 @@ const ShinyEffect = ({left, right, top, size = 500}) => {
     }
 
   return (
-    <div className='shiny-effect ' style={positionStyles}>
+    <div className='shiny-effect' style={positionStyles}>
       
     </div>
   )

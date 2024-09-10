@@ -128,7 +128,7 @@ const Home = () => {
         <DiNodejsSmall className="text-green-500 mx-2" />
       </motion.div>
       <div className="absolute inset-0 hidden md:block">
-        <ShinyEffect left={0} top={0} size={500} />
+        <ShinyEffect left={0} top={0} size={100}/>
       </div>
     </div>
   );
