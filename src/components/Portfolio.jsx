@@ -24,7 +24,7 @@ const projects = [
       "Developed the landing page for a day care and montessari club website using HTML, CSS & JavaScript.",
     links: {
       site: "https://vlcdaycare.netlify.app",
-      github: "#",
+      github: "https://github.com/ahsannaseem1/VLC-Day-Care-Website",
     },
   },
   {
@@ -44,7 +44,7 @@ const projects = [
       "Developed a single page website that displays verses from Quran using HTML, CSS & JavaScript.",
     links: {
       site: "https://quraan-kareem.netlify.app",
-      github: "#",
+      github: "https://github.com/ahsannaseem1/Quran-Kareem",
     },
   },
 ];
