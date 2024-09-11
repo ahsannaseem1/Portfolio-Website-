@@ -1,7 +1,7 @@
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
 import ShinyEffect from "./ShinyEffect";
-import profilepic from "../assets/profilepic1.png";
+// import profilepic from "../assets/profilepic1.png";
 import resume from "../assets/ahsan.pdf";
 import {
   AiOutlineLinkedin,
@@ -15,6 +15,7 @@ import {
   DiNodejsSmall,
   DiReact,
 } from "react-icons/di";
+import { FiMapPin } from "react-icons/fi";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -29,10 +30,10 @@ const Home = () => {
           className="mx-auto"
         >
           <TypeAnimation
-            sequence={["Software Engineer", 1000,"Front End Developer", 1000, "Web Developer",1000,"Shopify Developer",1000]}
+            sequence={["Software Engineer", 1000,"Front End Developer", 1000,]}
             speed={50}
             repeat={Infinity}
-            className="font-bold text-gray-400 text-xl md:text-3xl italic mb-4"
+            className="font-bold text-gray-400 text-xl md:text-2xl italic mb-4"
           />
 
           <motion.p
@@ -53,7 +54,16 @@ const Home = () => {
             transition={{ duration: 1, delay: 1 }}
             className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-xl text-md mb-6 md:text-center"
           >
-            Software Engineer from COMSATS Univeristy Lahore currently working as a front-end developer intern at Savvy Programmers.
+            Software Engineer from COMSATS Univeristy Lahore, currently working as a front-end developer intern at Savvy Programmers.
+          </motion.p>
+          <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 1, delay: 1 }}
+          className="text-gray-300 max-w-[300px] md:max-w-[500px] md:text-xl text-md mb-6 md:text-center" 
+          >
+          <FiMapPin size={15} color="white" className="inline-block mb-1 mx-2" />Lahore, Pakistan.
           </motion.p>
           <motion.div
             initial={{ opacity: 0, y: 50 }}
@@ -119,7 +129,6 @@ const Home = () => {
         transition={{ duration: 1, delay: 2 }}
         className="flex flex-row text-7xl px-12 md:px-0 w-full justify-center items-center py-24"
       >
-        {/* <p className="text-gray-200 mr-6">My Tech Stack</p> */}
 
         <DiHtml5 className="text-orange-600 mx-2" />
         <DiCss3 className="text-blue-600 mx-2" />

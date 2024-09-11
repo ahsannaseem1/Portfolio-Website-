@@ -21,7 +21,8 @@ body {
   max-width: 100%;
 }
 .secondary-color{
-  background-color: #A855F7;
+  background-color: #9334E9;
+  
 }
 span {
   @apply text-purple-600;

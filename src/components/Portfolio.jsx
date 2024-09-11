@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import smarthrm from "../assets/smarthrm1.jpg";
 import vlcdaycare from "../assets/vlcdaycare1.png";
 import londontownusa from "../assets/londontown.png";
@@ -49,16 +49,10 @@ const projects = [
   },
 ];
 
-// useEffect(()=>{
-//   setTimeout(()=>{
-
-//   })
-// })
-
 const Portfolio = () => {
   return (
     <div className="max-w-[1000px] mx-auto p-6 md:my-20" id="portfolio">
-      <h2 className="text-3xl font-bold text-gray-200 mb-8">Portfolio</h2>
+      <h2 className="text-3xl font-bold text-center text-gray-200 mb-8">Portfolio</h2>
       {projects.map((project, index) => (
         <Reveal>
           <div
@@ -91,10 +85,10 @@ const Portfolio = () => {
                 </a>
                 <a
                   href={project.links.github}
-                  className="px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 items-center"
+                  className="flex gap-2 px-4 py-2 bg-slate-600 text-gray-200 rounded-lg hover:bg-slate-700 transition duration-300 items-center"
                   target="blank"
                 >
-                  <AiFillGithub />
+                  <AiFillGithub /> Github
                 </a>
               </div>
             </div>
